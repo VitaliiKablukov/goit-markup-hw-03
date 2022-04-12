@@ -1,0 +1,199 @@
+/* color-hover #2196F3 */
+/* color-first_text #757575  */
+/* color-second-text #212121 */
+/* color-third #FFFFFF */
+ /*font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;  */
+:root {
+    --color-first: #757575;
+    --color-second: #212121;
+    --color-third: #ffffff;
+    --color-logo-focus: #2196F3;
+    --first-background-color: #ffffff;
+    --second-background-color: #2F303A;
+    --background-button-porfolio: #F5F4FA;
+    --logo-header-color: #000000;
+    --mailtel-color: rgba(255, 255, 255, 0.6);
+}
+ul {
+    list-style: none;
+padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+     background-color: var(--first-background-color) ;
+     font-family: Roboto, Raleway, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-first);   
+ }
+ /* logo footer and header */
+ .logo-header
+    {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;   
+    color: var(--logo-header-color);
+    text-decoration: none;
+    }
+
+    .logo-header-web {
+        color: var(--color-logo-focus);
+    }
+    /* header list */
+.header-list-link.current {
+    color: var(--color-logo-focus);
+}
+.header-list {
+    list-style: none;
+    text-decoration: none
+}
+    .header-list-link,
+    .header-list-item {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--color-second);
+    }
+    .header-list-link:hover,
+    .header-list-link:focus {
+color: var(--color-logo-focus);
+    }
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-first);
+}
+.header-mail:focus,
+.header-mail:hover {
+    color: var(--color-logo-focus);
+}
+.header-tel:focus,
+.header-tel:hover {
+    color: var(--color-logo-focus);
+}
+/* Hero */
+.hero {
+    background-color: var(--second-background-color);
+}
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--color-third);
+}
+.hero-button {
+font-family: inherit;
+background-color: var(--color-logo-focus);
+color: var(--color-third);
+cursor: pointer;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+letter-spacing: 0.06em;
+}
+/* benefits */
+.benefits-item-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-second);
+}
+.benefits-item-text {
+    line-height: 1.7;
+}
+/* project */
+.project-title {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color-second);
+}
+/* team */
+.team-title {
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--color-second);
+}
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-second);
+}
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.2;
+}
+/* footer */
+.footer {
+    background-color: var(--second-background-color);
+}
+.logo-footer {
+    color: var(--color-third);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.logo-footer-web {
+color: var(--color-logo-focus);
+}
+.footer-list-address{
+    font-style: normal;
+    line-height: 1.7;  
+    color: var(--color-third);
+}
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    line-height: 1.7;  
+    color: var(--mailtel-color);
+}
+.footer-mail:focus,
+.footer-mail:hover {
+    color: var(--color-logo-focus);
+}
+.footer-tel:focus,
+.footer-tel:hover {
+    color: var(--color-logo-focus);
+}
+/* PORTFOLIO */
+.filter-button {
+    font-family: inherit;
+    background-color: var(--background-button-porfolio);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-second);
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus 
+{
+background-color: var(--color-logo-focus);
+color: var(--color-third);
+}
+/* project portfolio */
+.portfolio-project-title {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-second);
+    letter-spacing: 0.06em;
+}
+.portfolio-project-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--color-first);
+}
