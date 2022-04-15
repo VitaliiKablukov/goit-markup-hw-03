@@ -65,14 +65,21 @@ body {
      padding-right: 15px;
     margin: 0 auto;
     }
+    .section {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
                                 /* Header */
  /* logo footer and header */
  header {
      padding-top: 24px;
      padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
-    width: var(--width-section);
-    margin: 0 auto;
  }
  .logo-header
     {
@@ -112,14 +119,16 @@ margin-right: 50px;
     margin-right: 0;
     margin-left: auto;
 }
-
-
     .header-list-link,
     .header-list-item {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--color-second);
+    }
+    .header-list-link {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     .header-list-link:hover,
     .header-list-link:focus {
@@ -143,10 +152,10 @@ color: var(--color-logo-focus);
                                     /* Hero */
 .hero {
     background-color: var(--second-background-color);
-    width:var(--width-section);
-    margin: 0 auto;
-    padding: 200px 452px;
+padding-top: 200px;
+padding-bottom: 200px;
 }
+
 .hero-title {
 font-weight: 900;
 font-size: 44px;
@@ -155,6 +164,8 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--color-third);
+width: 696px;
+margin: 0 auto;
 margin-bottom: 30px;
 }
 .hero-button {
@@ -172,17 +183,15 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin: 0 auto;
 display: block;
+border: none;
 }
                                 /* benefits */
-.benefits {
-    padding: var(--padding-section);
-    margin-left: var(--margin-section-minus);
-}
 .benefits-list{
     display: flex;
+    margin-left: var(--margin-section-minus);
 }
 .benefits-list-item {
-    width: calc(100%/4 -30px);
+    width: calc(100% / 4 - 30px);
     margin-left: var(--margin-between);
 }
 .benefits-item-title {
@@ -197,7 +206,7 @@ display: block;
 }
                                 /* project */
 .project {
-    padding-bottom: 83px;
+    padding-top: 0;
 }
 .project-list {
     display: flex;
@@ -205,7 +214,7 @@ display: block;
 }
 
 .project-list-item {
-    width: calc(100/3 - 30px);
+    width: calc(100% / 3 - 30px);
     margin-left: var(--margin-between);
 }
 .project-title {
@@ -217,9 +226,6 @@ display: block;
 }
                                 /* team */
 .team {
-    width: var(--width-section);
-    margin: 0 auto;
-    padding: var(--padding-section);
     background-color: var(--background-button-porfolio)
 }
 .team-list {
@@ -227,7 +233,7 @@ display: block;
     margin-left: var(--margin-section-minus);
 }
 .team-list-item {
-    width: calc(100/4 -30px);
+    width: calc(100% / 4 - 30px);
     margin-left: var(--margin-between);
     background-color: var(--first-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -265,8 +271,7 @@ display: block;
 .footer {
     background-color: var(--second-background-color);
     padding: 60px 0;
-    width: var(--width-section);
-    margin: 0 auto;
+
 }
 .logo-footer {
     color: var(--color-third);
@@ -312,6 +317,7 @@ margin-bottom: 9px;
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .filter-project-item:not(:last-child) {
 margin-right: 8px;
 }
@@ -342,13 +348,18 @@ color: var(--color-third);
 
 }
 .projet-portfolio-item {
-  width: calc(100%/3 - 30px);
+  width: calc(100% / 3 - 30px);
   margin-left: var(--margin-between);
   margin-bottom: var(--margin-between);
 }
+.project-name {
+    padding: 20px 24px;
+    border-bottom: var(--border-portfolio);
+    border-left: var(--border-portfolio);
+    border-right: var(--border-portfolio);
+}
 
 .filter-project-portfolio {
-    padding:var(--padding-section);
 }
 .portfolio-project-title {
     font-size: 18px;
@@ -356,20 +367,14 @@ color: var(--color-third);
     color: var(--color-second);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 .portfolio-project-text {
     font-size: 16px;
     line-height: 1.9;
     color: var(--color-first);
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
-.portfolio-project-img {
-    margin-bottom: 20px;
-}
+
 .project-portfolio-list >li {
     background: var(--first-background-color);
-    border: var(--border-portfolio);
     box-sizing: border-box;
 }
